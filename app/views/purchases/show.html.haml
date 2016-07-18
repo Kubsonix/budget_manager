@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @purchase.name
+%p
+  %b Category i:
+  = @purchase.category_i
+%p
+  %b Price:
+  = @purchase.price
+%p
+  %b Amount:
+  = @purchase.amount
+%p
+  %b Description:
+  = @purchase.description
+%p
+  %b Date:
+  = @purchase.date
+
+= link_to 'Edit', edit_purchase_path(@purchase)
+\|
+= link_to 'Back', purchases_path
